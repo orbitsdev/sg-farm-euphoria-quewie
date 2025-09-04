@@ -1,0 +1,10 @@
+<script setup lang="ts">
+import { Head } from '@inertiajs/vue3';
+</script>
+
+<template>
+    <Head title="Rides" />
+    <div>
+        <h1>Rides</h1>
+    </div>
+</template>
