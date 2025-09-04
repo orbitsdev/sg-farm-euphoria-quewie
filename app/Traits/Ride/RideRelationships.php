@@ -6,6 +6,7 @@ use App\Models\Package;
 use App\Models\TicketPackageRideAccess;
 use App\Models\RideScan;
 use App\Models\Gate;
+use App\Models\PackageRide;
 
 trait RideRelationships
 {
@@ -16,6 +17,10 @@ trait RideRelationships
     {
         return $this->belongsToMany(Package::class, 'package_rides')
                     ->withTimestamps();
+    }
+    public function packagesRides()
+    {
+        return $this->hasMany(PackageRide::class);
     }
 
     public function ticketPackageAccesses()

@@ -13,10 +13,6 @@ trait GateRelationships
         return $this->belongsTo(Ride::class);
     }
 
-    public function rideScans()
-    {
-        return $this->hasMany(RideScan::class);
-    }
 
     public function logs()
     {
